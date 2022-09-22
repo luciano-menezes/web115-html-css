@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us - Brand Salon</title>
+    <link href="favicon.ico" rel="icon">
+    <link href="css/salon.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body>
+    <div id="wrapper">
+    <a href="#main-content" id="bypass">Skip to main content</a>
+      <header role="banner">
+        <img src="images/logo.gif" width="300" height="97" alt="business logo">
+        <nav id="contact-us-page" role="navigation">
+          <label for="nav-checkbox" id="nav-trigger">Menu</label>
+          <input type="checkbox" id="nav-checkbox">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stylist-team.html">Stylist Team</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <div id="contact-top">
+        <h1>Check our schedule and make an appointment</h1>
+        <img src="images/head-1.png" width="234" height="143" alt="An illustration of a scissor cutting a woman's hair">
+      </div>
+      
+      <main role="main" id="main-content" tabindex="-1">
+        <section id="table-section">
+          <h2>See what days and time works best for you</h2>
+          <table>
+            <caption>Schedule</caption>
+            <tr>
+              <td></td>
+              <th scope="col">AM</th>
+              <th scope="col">PM</th>
+            </tr>
+            <tr>
+              <th scope="row">Monday</th>
+              <td>8 - 11</td>
+              <td>12 - 7</td>
+            </tr>
+            <tr>
+              <th scope="row">Tuesday</th>
+              <td>8 - 11</td>
+              <td>12 - 7</td>
+            </tr>
+            <tr>
+              <th scope="row">Wednesday</th>
+              <td>8 - 11</td>
+              <td>12 - 7</td>
+            </tr>
+            <tr>
+              <th scope="row">Thursday</th>
+              <td>8 - 11</td>
+              <td>12 - 7</td>
+            </tr>
+            <tr>
+              <th scope="row">Friday</th>
+              <td colspan="2">Open from 8am - 6pm</td>
+            </tr>
+            <tr>
+              <th scope="row">Saturday</th>
+              <td>9 - 12</td>
+              <td>1:30 - 6</td>
+            </tr>
+            <tr>
+            <th scope="row">Sunday</th>
+              <td>Close</td>
+              <td>1 - 5</td>
+            </tr>
+          </table>
+        </section>
+        
+        <section>
+          <h2>Set up an appointment with Brand Salon</h2>
+          <form action="unit-3-form-handler.html" method="get">
+            <fieldset>
+              <legend>Contact Info</legend>
+              <label for="first-name">*First Name:</label>
+              <input type="text" id="first-name" name="first-name" required><br>
+
+              <label for="last-name">*Last Name:</label>
+              <input type="text" id="last-name" name="last-name" required><br>
+
+              <label for="email">*Email:</label>
+              <input type="email" id="email" name="email" required><br>
+
+              <label for="phone">*Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required>
+            </fieldset><br>
+            
+            <fieldset>
+              <legend>Appointment Details</legend>
+              <p>Have you been at Brand Salon before?</p>
+              <input type="radio" id="yes" name="customer" value="yes">
+              <label for="yes">Yes</label>
+              
+              <input type="radio" id="no" name="customer" value="no">
+              <label for="no">No</label><br>
+              
+              <label for="date">*Select a date that would work best for you.</label>
+              <input type="date" id="date" name="date" min="2022-03-09" max="2022-12-31"><br>
+              
+              <label for="am-pm">*Would you prefer AM or PM?</label>
+              <select id="am-pm" name="am-pm" size="3" required>
+                <option>AM</option>
+                <option>PM</option>
+                <option>Anytime</option>
+              </select><br>
+              
+              <label for="details-questions">Let us know about any other details or questions you have.</label>
+              <textarea id="details-questions" name="details-questions" cols="30" rows="6" maxlength="500"></textarea>
+            </fieldset>
+              <input type="submit" value="Send">
+          </form>
+        </section>
+      </main>
+      
+      <footer role="contentinfo">
+        <p>2021 River Rd, Asheville-NC 28806 - &#9743; 800 000 0000</p>
+      </footer>
+    </div>
+  </body>
+</html>

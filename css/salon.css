@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Stylish&display=swap");
+
+/******* Global style ********/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font: 20px/1.5 "Noto Sans", sans-serif;
+}
+
+#bypass {
+  background-color: #000;
+  border: 5px solid #cccc00;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  position: absolute;
+  text-decoration: none;
+  top: -9999px;
+}
+
+#bypass:focus {
+  left: 10px;
+  top: 10px;
+}
+
+h1,
+h2 {
+  font-family: "Stylish", sans-serif;
+  text-shadow: 0 0 1.5px #000;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+img {
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+  height: auto;
+  max-width: 100%;
+}
+
+#wrapper {
+  border: 1px solid #000;
+  box-shadow: inset 2px 2px 10px #000;
+  margin: 1.5rem auto;
+  max-width: 1200px;
+  min-width: 320px;
+  padding: 2rem 2rem 1rem;
+  position: relative;
+  width: 100%;
+}
+
+/******* Navbar ********/
+
+nav {
+  background-color: #000;
+  border-radius: 10px;
+  margin: 0.5rem auto 0.5rem;
+  padding: 0.25rem;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav li:hover {
+  background-color: #fff;
+}
+
+#nav-trigger {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+#nav-trigger,
+#nav-checkbox {
+  display: none;
+}
+
+#home-page li:nth-child(1) {
+  border: 1px solid #fff;
+}
+
+#stylist-page li:nth-child(2) {
+  border: 1px solid #fff;
+}
+
+#about-us-page li:nth-child(3) {
+  border: 1px solid #fff;
+}
+
+#contact-us-page li:nth-child(4) {
+  border: 1px solid #fff;
+}
+
+/******** Top Row ********/
+
+#top-row {
+  display: flex;
+  margin: 3rem auto 1rem;
+  padding: 0.5rem 0 3rem 0;
+  width: 100%;
+}
+
+#top-row div:nth-child(1) {
+  flex: 2;
+  margin-right: 1rem;
+  order: 2;
+}
+
+#top-row div:nth-child(2) {
+  flex: 1;
+  margin-left: 1rem;
+  order: 1;
+}
+
+#top-row h1 {
+  font-size: 56px;
+  margin-top: 0;
+  text-align: center;
+}
+
+#top-row p {
+  font-family: "Stylish", sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+/******** Bottom Columns ********/
+
+#bottom-columns {
+  border-top: 1px dotted #000;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem auto;
+  padding-top: 1rem;
+}
+
+#bottom-columns section:nth-child(1) {
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+  order: 1;
+}
+
+#bottom-columns section:nth-child(2) {
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+  order: 2;
+}
+
+#bottom-columns section:nth-child(3) {
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+  order: 3;
+}
+
+#bottom-columns section p {
+  margin: 0.5rem 1rem 0.5rem auto;
+  padding: 0.5rem 1.5rem 0.5rem 0;
+  text-align: center;
+}
+
+/******** Stylist Page ********/
+
+#stylists-columns {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#stylists-columns section {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+}
+
+#stylists-columns h1 {
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#stylists-columns section:first-of-type img:first-of-type {
+  float: left;
+  margin: 0.5rem 1.5rem 1.5rem 1rem;
+}
+
+#stylists-columns section:last-of-type img:last-of-type {
+  float: left;
+  margin: 0.5rem 1.5rem 1.5rem 1rem;
+}
+
+#stylists-columns h2 {
+  margin-top: 0;
+}
+#stylists-columns section p {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+/******** About Us Page ********/
+
+#about-us {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+
+#about-us article {
+  width: 85%;
+}
+
+#about-us h1 {
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#about-us img {
+  float: left;
+  margin: 0.5rem 1.5rem 1.5rem 1rem;
+}
+
+/*************** Contact Us Page ***************/
+
+#contact-top {
+  border-bottom: #000 dotted 1px;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+}
+
+#contact-top h1 {
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#contact-top img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/******** Contact Us - Table ********/
+
+#table-section {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+}
+
+#table-section h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+table {
+  background-color: #f5802533;
+  border: #000 solid 1px;
+  border-collapse: collapse;
+  caption-side: bottom;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  width: 50%;
+}
+
+caption {
+  background-color: #ffdbc0;
+  border: #000 solid 1px;
+  border-top: none;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+td,
+th {
+  border: #000 solid 1px;
+  padding: 0.5rem;
+}
+
+th {
+  white-space: nowrap;
+}
+
+td {
+  text-align: center;
+}
+
+table tr:first-of-type {
+  background-color: #ffdbc0;
+}
+
+/******** Contact Us - Forms ********/
+
+label {
+  display: inline-block;
+  text-align: left;
+  width: 28rem;
+}
+
+input[type="radio"] + label {
+  display: inline;
+  margin-right: 1rem;
+}
+
+input:required {
+  background-color: #ffcccb;
+}
+
+input:valid:not([type="submit"]) {
+  background-color: #c8f7c8;
+}
+
+input:checked + label {
+  color: #2b5329;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+input,
+select {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+}
+
+fieldset {
+  border: #000 solid 2px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+}
+
+legend {
+  border: #000 solid 2px;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.25rem;
+}
+
+/******** Footer ********/
+
+footer {
+  background-color: #000;
+  border-radius: 10px;
+  color: #fff;
+  margin: 4rem auto 0;
+  padding: 0.25rem;
+}
+
+footer p {
+  text-align: center;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+/******** Fluid text starts at 1200px ********/
+
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1200 - 320));
+  }
+
+  #top-row h1 {
+    font-size: calc(26px + (56 - 26) * (100vw - 320px) / (1200 - 320));
+  }
+
+  #top-row p {
+    font-size: calc(16px + (32 - 16) * (100vw - 320px) / (1200 - 320));
+  }
+
+  h1 {
+    font-size: calc(36px + (48 - 36) * (100vw - 320px) / (1200 - 320));
+  }
+}
+
+/******** 1150 ********/
+
+@media screen and (max-width: 1150px) {
+  #bottom-columns {
+    display: block;
+  }
+
+  #bottom-columns section p {
+    text-align: left;
+  }
+}
+
+/******** 960 ********/
+
+@media screen and (max-width: 960px) {
+  #top-row {
+    display: block;
+  }
+
+  #top-row div:nth-child(1) {
+    flex: 1;
+    margin-right: 0;
+    order: 1;
+  }
+
+  #top-row div:nth-child(2) {
+    flex: 1;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    order: 2;
+  }
+
+  #stylists-columns section:first-of-type img:first-of-type {
+    float: none;
+    margin: 0.5rem auto 0.5rem;
+  }
+
+  #stylists-columns section:last-of-type img:last-of-type {
+    float: none;
+    margin: 0.5rem auto 0.5rem;
+  }
+
+  #stylists-columns section p {
+    margin: 0;
+    padding: 0;
+  }
+
+  #about-us img {
+    float: none;
+    margin: 0.5rem auto 0.5rem;
+  }
+}
+
+/******** 640 ********/
+
+@media screen and (max-width: 640px) {
+  #nav-trigger {
+    display: block;
+  }
+
+  #nav-checkbox:checked + ul {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    padding-left: 0.5rem;
+    width: 100%;
+  }
+
+  nav li {
+    display: block;
+  }
+
+  nav a {
+    border-bottom: #fff solid 1px;
+    display: block;
+    min-height: 50px;
+  }
+
+  #wrapper {
+    padding: 2rem 0.5rem 1rem;
+  }
+
+  #bottom-columns {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #about-us article {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  form label {
+    width: 10rem;
+  }
+}
+
+/******** 320 ********/
+
+@media screen and (max-width: 320px) {
+  header img {
+    display: none;
+  }
+
+  #wrapper {
+    box-shadow: none;
+    padding-top: 0;
+  }
+
+  img {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  #top-row {
+    margin: 0 0 0.5rem 0;
+    padding: 0.5rem 0 0.5rem;
+  }
+
+  #stylists-columns h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  #about-us {
+    margin: 0;
+  }
+
+  #about-us h1 {
+    margin: 0.5rem 0 0.5rem;
+    padding: 0.5rem 1rem 0.5rem;
+  }
+
+  #stylists-columns section {
+    margin-top: 1rem;
+  }
+
+  form label {
+    width: 5rem;
+  }
+
+  textarea {
+    margin-top: 2rem;
+    height: 6rem;
+    width: 11rem;
+  }
+
+  /******** Smallest Font ********/
+
+  body {
+    font-size: 16px;
+  }
+
+  #top-row h1 {
+    font-size: 26px;
+    margin: 0;
+  }
+
+  #top-row p {
+    font-size: 16px;
+    margin-top: 0.5rem;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
